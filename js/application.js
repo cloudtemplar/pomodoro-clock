@@ -195,12 +195,6 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-  if(window.Notification && Notification.permission !== "denied") {
-    Notification.requestPermission().then(function(permission) {
-      notifyMe();
-    });
-  }
-
   $('#message-box').hide();
   setTime('25', '00');
   $('#decrement-time').click(function() {
